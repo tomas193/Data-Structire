@@ -230,4 +230,4 @@ while True:
     else:
         print("Enter a valid option")
 
-#Por Jorge Tomás Araujo González   revisted version  2023
+#Por Jorge Tomás Araujo González   revisited version  2023
