@@ -1,11 +1,12 @@
 #Jorge Tomás Araujo González 26/8/2021
+#Ordenamiento rapido (quicksort)
 from math import trunc
-from random import randint#Ordenamiento por quicksort
+from random import randint
 while True:
     límite=int(input('\nIngrese la cantidad de números a ordenar: ')) #Ciclo while donde se introduce la variable que sea 
     if límite>=1 and límite<=50:                                    #mayor o igual a 1, y menor o igual a 100.
         break
-  #Por Jorge Tomás Araujo González
+
 lista=[] #Lista donde se guardarán los números a organizar
 
 #Ciclo for que se repetirá desde 0 hasta el número límite que ingresó el usuario
@@ -38,7 +39,6 @@ def quicksort(lista):
     lista_menores, pivote, lista_mayores=particion(lista)
     return quicksort(lista_menores)+[pivote]+quicksort(lista_mayores)
 print(f'Lista ordenada:\n{quicksort(lista)}')
-
 
 
 
